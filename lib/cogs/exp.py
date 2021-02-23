@@ -20,9 +20,9 @@ class HelpMenu(ListPageSource):
 	async def write_page(self, menu, offset, fields=[]):
 		len_data = len(self.entries)
 
-		embed = Embed(title="XP Leaderboard",
-					  colour=self.ctx.author.colour)
-		embed.set_thumbnail(url=self.ctx.guild.icon_url)
+		embed = Embed(title = "XP Leaderboard",
+					  colour = self.ctx.author.colour)
+		embed.set_thumbnail(url = self.ctx.guild.icon_url)
 		embed.set_footer(text=f"{offset:,} - {min(len_data, offset+self.per_page-1):,} of {len_data:,} members.")
 
 		for name, value in fields:
