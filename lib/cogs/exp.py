@@ -26,7 +26,7 @@ class HelpMenu(ListPageSource):
 		embed.set_footer(text=f"{offset:,} - {min(len_data, offset+self.per_page-1):,} of {len_data:,} members.")
 
 		for name, value in fields:
-			embed.add_field(name=name, value=value, inline=False)
+			embed.add_field(name = name, value = value, inline = False)
 
 		return embed
 
