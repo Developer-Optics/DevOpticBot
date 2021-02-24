@@ -7,7 +7,6 @@ cffi==1.14.5
 chardet==3.0.4
 Command==0.1.0
 discord==1.0.1
-discord-ext-menus==1.0.0a27+g6f2b873
 discord.py==1.6.0
 DiscordUtils==1.2.6
 idna==3.1
