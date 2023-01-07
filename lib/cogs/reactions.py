@@ -8,7 +8,7 @@ from discord.ext.commands import command, has_permissions
 from ..db import db
 
 pings = {
-	"📢": 790918678899064833, # Announcement Ping
+	"📢": 790918678899064833, # Announcement Ping 
 	"📃": 801404701248585750, # QOTD Ping
 
 
@@ -31,7 +31,7 @@ class Reactions(Cog):
 	@Cog.listener()
 	async def on_ready(self):
 		if not self.bot.ready:
-			self.reaction_message = await self.bot.get_channel(790918459973697556).fetch_message(801401615398469652)
+			self.reaction_message = await self.bot.get_channel(859879812204986388).fetch_message(1061356967630733422)
 			self.starboard_channel = self.bot.get_channel(801422018318696478)
 			self.bot.cogs_ready.ready_up("reactions")
 

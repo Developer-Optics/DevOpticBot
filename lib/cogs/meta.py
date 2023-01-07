@@ -81,13 +81,13 @@ class Meta(Cog):
 
 		await ctx.send(embed=embed)
 
-	@command(name="shutdown")
-	async def shutdown(self, ctx):
-		await ctx.send("Shutting down...")
+	#@command(name="shutdown")
+	#async def shutdown(self, ctx):
+		#await ctx.send("Shutting down...")
 		
-		db.commit()
-		self.bot.scheduler.shutdown()
-		await self.bot.logout()
+		#db.commit()
+		#self.bot.scheduler.shutdown()
+		#await self.bot.logout()
 
 	@Cog.listener()
 	async def on_ready(self):
